@@ -18,12 +18,24 @@ public class MonkeyAI : MonoBehaviour
 
     MonkeyState monkeyState;
 
+    bool getPlayerPosition;
+
     private void Start()
     {
-        monkeyState = MonkeyState.Idle;
 
-        // get player position
-        playerPosition = MonkeySpawnManager.Instance.PlayerTransform.position;
+    }
+
+    private void OnEnable()
+    {
+        if (!getPlayerPosition)
+        {
+            monkeyState = MonkeyState.Idle;
+
+            // get player position
+            playerPosition = MonkeySpawnManager.Instance.PlayerTransform.position;
+
+            getPlayerPosition = true;
+        }
     }
 
     private void Update()
@@ -73,6 +85,7 @@ public class MonkeyAI : MonoBehaviour
 
     void DisappearAction()
     {
+        getPlayerPosition = false;
         gameObject.SetActive(false);
     }
 }

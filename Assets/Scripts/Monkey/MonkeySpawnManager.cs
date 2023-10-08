@@ -16,10 +16,21 @@ public class MonkeySpawnManager : SingletonMonoBehaviour<MonkeySpawnManager>
     [SerializeField]
     List<GameObject> monkeyPool;
 
+    [SerializeField]
+    List<SpawnPoint> spawnPoints;
+
+    int sp_idx;
+
+    [SerializeField]
+    float[] cdRange;
+
+    float cd;
+
     public Transform PlayerTransform { get { return playerTransform; } }
 
     private void Start()
     {
+        cd = Random.Range(cdRange[0], cdRange[1]);
         GameObject tempMonkey;
 
         // Generate object pool for monkeys
@@ -28,6 +39,19 @@ public class MonkeySpawnManager : SingletonMonoBehaviour<MonkeySpawnManager>
             tempMonkey  = Instantiate(monkeyPrefab, Vector3.zero, Quaternion.identity);
             tempMonkey.SetActive(false);
             monkeyPool.Add(tempMonkey);
+        }
+    }
+
+    private void Update()
+    {
+        if (cd > 0)
+        {
+            cd -= Time.deltaTime;
+        }
+        else
+        {
+            SelectSpawnPoint();
+            cd = Random.Range(cdRange[0], cdRange[1]);
         }
     }
 
@@ -44,6 +68,18 @@ public class MonkeySpawnManager : SingletonMonoBehaviour<MonkeySpawnManager>
         }
     }
 
+    private void SelectSpawnPoint()
+    {
+        sp_idx = Random.Range(0, spawnPoints.Count - 1);
+
+/*        while (spawnPoints[sp_idx].isInCD)
+        {
+            sp_idx = Random.Range(0, spawnPoints.Count - 1);
+        }*/
+
+        spawnPoints[sp_idx].SpawnMonkey();
+    }
+
     private GameObject GetMonkeyFromPool()
     {
         foreach(GameObject monkey in monkeyPool)
@@ -53,7 +89,17 @@ public class MonkeySpawnManager : SingletonMonoBehaviour<MonkeySpawnManager>
                 return monkey;
             }
         }
-
         return null;
+    }
+
+    [ContextMenu("Set Up Spawn Point")]
+    private void SetUpSpawnPoint()
+    {
+        spawnPoints.Clear();
+
+        foreach (GameObject sp in GameObject.FindGameObjectsWithTag("SpawnPoint"))
+        {
+            spawnPoints.Add(sp.GetComponent<SpawnPoint>());
+        }
     }
 }
