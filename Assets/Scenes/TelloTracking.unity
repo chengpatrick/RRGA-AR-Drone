@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab181b599e4feeb4fa1e4d4c66d89586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneType: 1
+  sceneType: 0
   flightStatus: 0
   connectionState: 0
   activeDrone: {fileID: 0}

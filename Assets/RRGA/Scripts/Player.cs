@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private TrackCamUIManager ui;
+
     private bool hasTreasure = false;
 
     private void OnTriggerEnter(Collider other)
@@ -15,9 +17,15 @@ public class Player : MonoBehaviour
             Debug.Log("Collect State");
         }
 
+        if(other.gameObject.tag == "Monster")
+        {
+            ui.setCrack();
+        }
+
         if(other.gameObject.tag == "Finish" && hasTreasure)
         {
             Debug.Log("Win State");
+            ui.setWinText();
         }
     }
 }
