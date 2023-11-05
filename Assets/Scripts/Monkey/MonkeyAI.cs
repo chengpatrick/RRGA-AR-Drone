@@ -69,10 +69,11 @@ public class MonkeyAI : MonoBehaviour
     {
         // Monkey looks at the player
         transform.LookAt(playerPosition);
+        StartCoroutine(JumpToTarget(playerPosition));
 
-        // Monkey moves to the player
+/*        // Monkey moves to the player
         var step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, playerPosition, step);
+        transform.position = Vector3.MoveTowards(transform.position, playerPosition, step);*/
     }
 
     void MoveTransition()
@@ -87,5 +88,31 @@ public class MonkeyAI : MonoBehaviour
     {
         getPlayerPosition = false;
         gameObject.SetActive(false);
+    }
+
+    private IEnumerator JumpToTarget(Vector3 targetPosition)
+    {
+        Vector3 startPosition = transform.position;
+        Vector3 handlePosition = Vector3.Lerp(startPosition, targetPosition, 0.5f);
+        handlePosition.y += 5;
+
+        float distance = (startPosition - targetPosition).magnitude;
+        float duration = distance / speed;
+
+        for (float f = 0; f < 1; f += Time.deltaTime / duration)
+        {
+            transform.position = Vector3.Lerp(
+                Vector3.Lerp(
+                    startPosition,
+                    handlePosition,
+                    f),
+                Vector3.Lerp(
+                    handlePosition,
+                    targetPosition,
+                    f),
+                f);
+
+            yield return null;
+        }
     }
 }
