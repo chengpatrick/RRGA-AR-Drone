@@ -29,14 +29,6 @@ public class FPSShooter : MonoBehaviour
 
     void ShootProjectile()
     {
-        Ray ray = cam.ViewportPointToRay(new Vector3(.5f, .5f, 0));
-        RaycastHit hit;
-
-        //if (Physics.Raycast(ray, out hit))
-        //    target = hit.point;
-        //else
-        //    target = ray.GetPoint(1000);
-
         if (left)
         {
             left = false;
@@ -47,6 +39,17 @@ public class FPSShooter : MonoBehaviour
             left = true;
             InstantiateProjectile(RFirePoint);
         }
+
+        Ray ray = cam.ViewportPointToRay(new Vector3(.5f, .5f, 0));
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            if(hit.transform.gameObject.tag == "Monster")
+            {
+                Destroy(hit.transform.gameObject, .3f);
+            }
+        } 
     }
 
     void InstantiateProjectile(Transform firePoint)
@@ -54,7 +57,8 @@ public class FPSShooter : MonoBehaviour
         GameObject projectileObj = Instantiate(projectile, firePoint.position, Quaternion.identity);
         // projectileObj.transform.parent = gameObject.transform;
         // projectile.GetComponent<Rigidbody>().velocity = (target.position - firePoint.position).normalized * projectileSpeed;
-        projectile.GetComponent<Rigidbody>().AddForce((target.position - firePoint.position).normalized * projectileSpeed);
+        // projectile.GetComponent<Rigidbody>().AddForce((target.position - firePoint.position).normalized * projectileSpeed);
+        projectileObj.GetComponent<Projectile>().velocity = (target.position - firePoint.position).normalized * projectileSpeed;
         Debug.Log((target.position - firePoint.position).normalized * projectileSpeed);
     }
 }

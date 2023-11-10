@@ -578,6 +578,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffa2eb396e70a7246afb2ba79066e8b3, type: 3}
+--- !u!1 &128741766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128741767}
+  m_Layer: 0
+  m_Name: RFirePointFeed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &128741767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128741766}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: -1.7, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1159817103}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &192340908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9121051106293318887, guid: 7a7fe0aa051340a4882ee77e6d93e265,
@@ -646,7 +677,7 @@ GameObject:
   - component: {fileID: 279319563}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Collectable
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -660,7 +691,7 @@ Transform:
   m_GameObject: {fileID: 279319561}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.204, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -925,7 +956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &335736006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2161,7 +2192,7 @@ GameObject:
   - component: {fileID: 889684468}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Collectable
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2175,7 +2206,7 @@ Transform:
   m_GameObject: {fileID: 889684466}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.204, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2658,6 +2689,8 @@ Transform:
   - {fileID: 192340908}
   - {fileID: 311149120}
   - {fileID: 2108173174}
+  - {fileID: 1936609077}
+  - {fileID: 128741767}
   - {fileID: 1475484835}
   m_Father: {fileID: 13445132}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2763,10 +2796,10 @@ MonoBehaviour:
   cam: {fileID: 1159817102}
   projectile: {fileID: 3602839405157111687, guid: 7a7fe0aa051340a4882ee77e6d93e265,
     type: 3}
-  LFirePoint: {fileID: 311149120}
-  RFirePoint: {fileID: 2108173174}
+  LFirePoint: {fileID: 1936609077}
+  RFirePoint: {fileID: 128741767}
   target: {fileID: 1475484835}
-  projectileSpeed: 30
+  projectileSpeed: 5000
 --- !u!1 &1176452335
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,7 +2850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1178979256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2912,7 +2945,7 @@ Transform:
   m_GameObject: {fileID: 1178979255}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 52}
+  m_LocalPosition: {x: 0, y: 0, z: 32}
   m_LocalScale: {x: 35.759357, y: 20.08953, z: 2.0089529}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3462,7 +3495,7 @@ Transform:
   m_GameObject: {fileID: 1475484834}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 190.2}
+  m_LocalPosition: {x: 0, y: 0, z: 32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3603,7 +3636,7 @@ GameObject:
   - component: {fileID: 1662949957}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Collectable
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3617,7 +3650,7 @@ Transform:
   m_GameObject: {fileID: 1662949955}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.204, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3937,6 +3970,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1930096308}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1936609076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1936609077}
+  m_Layer: 0
+  m_Name: LFirePointFeed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1936609077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936609076}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: -1.7, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1159817103}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1936967148
 GameObject:
   m_ObjectHideFlags: 0
