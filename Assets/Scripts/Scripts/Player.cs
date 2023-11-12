@@ -5,19 +5,22 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private TrackCamUIManager ui;
+    [SerializeField] private GameProgress progress;
 
     private bool hasTreasure = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Collectable")
+        if(other.gameObject.GetComponent<Treasure>() != null)
         {
-            Destroy(other.gameObject);
-            hasTreasure = true;
-            Debug.Log("Collect State");
+            if(other.gameObject.GetComponent<Treasure>().treasureIndex == progress.TargetTreasure())
+            {
+                Destroy(other.gameObject);
+                progress.CollectTreasure();
+                Debug.Log("Collect State");
+            }  
         }
-
-        if(other.gameObject.tag == "Monster")
+        else if(other.gameObject.tag == "Monster")
         {
             ui.setCrack();
         }

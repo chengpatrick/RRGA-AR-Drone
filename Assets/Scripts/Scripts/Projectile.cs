@@ -14,14 +14,4 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, projectileLifespam);
         GetComponent<Rigidbody>().AddForce(velocity);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-    }
 }
