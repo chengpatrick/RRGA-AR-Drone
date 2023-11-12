@@ -11,7 +11,10 @@ public enum MonkeyState
 public class MonkeyAI : MonoBehaviour
 {
     [SerializeField]
-    float speed = 1f;
+    float jumpSpeed = 1f;
+
+    [SerializeField]
+    float dropSpeed = 2f;
 
     [SerializeField]
     Vector3 playerPosition;
@@ -97,7 +100,7 @@ public class MonkeyAI : MonoBehaviour
         handlePosition.y += 5;
 
         float distance = (startPosition - targetPosition).magnitude;
-        float duration = distance / speed;
+        float duration = distance / jumpSpeed;
 
         for (float f = 0; f < 1; f += Time.deltaTime / duration)
         {
@@ -114,5 +117,26 @@ public class MonkeyAI : MonoBehaviour
 
             yield return null;
         }
+
+        /*        float interpolateValue = 0;
+
+                while (interpolateValue < 1)
+                {
+                    float duration;
+
+                    if (interpolateValue < 0.5f)
+                        duration = distance / jumpSpeed;
+                    else
+                        duration = distance / dropSpeed;
+
+                    interpolateValue += Time.deltaTime / duration;
+                    transform.position = Vector3.Lerp(
+                    Vector3.Lerp(startPosition, handlePosition, interpolateValue),
+                    Vector3.Lerp(handlePosition, targetPosition, interpolateValue),
+                    interpolateValue);
+
+                    yield return null;
+                }*/
+
     }
 }

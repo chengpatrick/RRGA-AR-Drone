@@ -118,5 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7942f4d515d35b4409d3b4ea1b597108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  jumpSpeed: 2
+  dropSpeed: 2
   playerPosition: {x: 0, y: 0, z: 0}
