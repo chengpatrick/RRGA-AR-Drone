@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameProgress : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class GameProgress : MonoBehaviour
     [SerializeField] List<GameObject> spawnList;
 
     [SerializeField] List<GameObject> spawnPoints;
-
+    [SerializeField] UIManager ui;
+    
     public int totalCollectables;
     protected int currentCollectables;
 
@@ -39,12 +41,12 @@ public class GameProgress : MonoBehaviour
             Instantiate(spawnList[1], spawnPoints[i].transform);
             spawnPoints.RemoveAt(i);
         }
-
     }
 
     public void CollectTreasure()
     {
         currentCollectables++;
+        ui.UpdateTreasureProgressText(currentCollectables);
     }
 
     public int TargetTreasure()
