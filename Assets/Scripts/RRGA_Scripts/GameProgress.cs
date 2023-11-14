@@ -57,6 +57,8 @@ public class GameProgress : MonoBehaviour
 
     public void CollectTreasure()
     {
+        SoundManager.Instance.PlaySFXClip("SFX_GetTreasure");
+
         currentCollectables++;
         ui.UpdateTreasureProgressText(currentCollectables);
 

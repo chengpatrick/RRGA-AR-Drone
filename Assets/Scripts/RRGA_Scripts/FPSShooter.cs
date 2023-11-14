@@ -35,6 +35,7 @@ public class FPSShooter : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.Space)) 
         {
             Fire();
+            SoundManager.Instance.PlaySFXClipInVary("SFX_LaserShot", 0.9f, 1.2f);
         }
     }
 
@@ -66,6 +67,7 @@ public class FPSShooter : MonoBehaviour
         {
             if(hit.transform.gameObject.tag == "Monster")
             {
+                SoundManager.Instance.PlaySFXClip("SFX_LaserHit");
                 Destroy(hit.transform.gameObject, .3f);
             }
         } 
