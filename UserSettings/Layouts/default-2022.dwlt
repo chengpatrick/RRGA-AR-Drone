@@ -43,7 +43,7 @@ MonoBehaviour:
     width: 2560
     height: 1357.3334
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -289,8 +289,8 @@ MonoBehaviour:
     y: 0
     width: 1471.3334
     height: 963.3333
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -342,8 +342,8 @@ MonoBehaviour:
     y: 0
     width: 604.6666
     height: 1307.3334
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -494,7 +494,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Monkey
+    - Assets/RRGA/Materials
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -502,16 +502,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Monkey
+  - Assets/RRGA/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\RRGA\2023_semester_3\rrga\UnityControllerForTello
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 259}
-    m_SelectedIDs: d2860000
-    m_LastClickedID: 34514
-    m_ExpandedIDs: 00000000125d0000145d00002c5d0000305d0000605d000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d85d0000
+    m_LastClickedID: 24024
+    m_ExpandedIDs: 000000004e5d0000505d0000685d00006c5d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -539,7 +539,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000125d0000145d0000
+    m_ExpandedIDs: 000000004e5d0000505d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -633,9 +633,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 5c590000
       m_LastClickedID: 0
-      m_ExpandedIDs: 80f7ffff24fbffff8059000096590000c0590000ce590000505a0000be5a00000a5b0000
+      m_ExpandedIDs: 12fbffff88590000125b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1029,9 +1029,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.110958025, y: 18.01836, z: -1.7381568}
+    m_Target: {x: -77.26381, y: -1.332197, z: -8.545885}
     speed: 2
-    m_Value: {x: 0.110958025, y: 18.01836, z: -1.7381568}
+    m_Value: {x: -77.26381, y: -1.332197, z: -8.545885}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1077,13 +1077,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.62828153, y: 0.01678899, z: -0.013576022, w: -0.77773553}
+    m_Target: {x: -0.24173972, y: -0.5035625, z: 0.14914463, w: -0.8159781}
     speed: 2
-    m_Value: {x: -0.6282576, y: 0.016788349, z: -0.0135755045, w: -0.77770585}
+    m_Value: {x: -0.24173033, y: -0.50354296, z: 0.14913884, w: -0.8159464}
   m_Size:
-    m_Target: 1.3629769
+    m_Target: 3.0377305
     speed: 2
-    m_Value: 1.3629769
+    m_Value: 3.0377305
   m_Ortho:
     m_Target: 0
     speed: 2

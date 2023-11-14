@@ -49,7 +49,8 @@ public class GameProgress : MonoBehaviour
         while(spawnPoints.Count > 0)
         {
             int i = Random.Range(0, spawnPoints.Count);
-            Instantiate(spawnList[1], spawnPoints[i].transform);
+            GameObject enemy = Instantiate(spawnList[1], spawnPoints[i].transform);
+            enemy.transform.Rotate(new Vector3(-90, 180, 0), Space.Self);
             spawnPoints.RemoveAt(i);
         }
     }
