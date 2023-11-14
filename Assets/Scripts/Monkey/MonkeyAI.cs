@@ -35,7 +35,8 @@ public class MonkeyAI : MonoBehaviour
             monkeyState = MonkeyState.Idle;
 
             // get player position
-            playerPosition = MonkeySpawnManager.Instance.PlayerTransform.position;
+            //playerPosition = MonkeySpawnManager.Instance.PlayerTransform.position;
+            playerPosition = Camera.main.transform.position;
 
             getPlayerPosition = true;
         }
