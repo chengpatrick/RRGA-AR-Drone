@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private TrackCamUIManager ui;
+    [SerializeField] private UIManager ui;
     [SerializeField] private GameProgress progress;
 
     private bool hasTreasure = false;
@@ -22,13 +22,13 @@ public class Player : MonoBehaviour
         }
         else if(other.gameObject.tag == "Monster")
         {
-            ui.setCrack();
+            // ui.setCrack();
         }
 
         if(other.gameObject.tag == "Finish" && hasTreasure)
         {
             Debug.Log("Win State");
-            ui.setWinText();
+            // ui.setWinText();
         }
     }
 }

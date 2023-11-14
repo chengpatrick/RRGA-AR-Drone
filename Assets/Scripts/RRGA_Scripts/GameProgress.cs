@@ -28,6 +28,7 @@ public class GameProgress : MonoBehaviour
         {
             int i = Random.Range(0, spawnPoints.Count);
             GameObject obj = Instantiate(spawnList[0], spawnPoints[i].transform);
+            obj.transform.position = new Vector3(0, 5f, 0);
             obj.GetComponent<Treasure>().AssignTreasureIndex(treasureIndexCounter);
             spawnPoints.RemoveAt(i);
 
@@ -47,10 +48,13 @@ public class GameProgress : MonoBehaviour
     {
         currentCollectables++;
         ui.UpdateTreasureProgressText(currentCollectables);
+
+        if (currentCollectables == totalCollectables)
+            ui.ShowWinText();
     }
 
     public int TargetTreasure()
     {
-        return currentCollectables + 1;
+        return currentCollectables;
     }
 }

@@ -507,13 +507,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: generated_1
+  mTrackableName: jungle3
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
-  mAspectRatio: 0.75
+  mAspectRatio: 0.5625
   mImageTargetType: 0
   mWidth: 5
-  mHeight: 3.75
+  mHeight: 2.8125
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -548,7 +548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 42185113}
   mHiddenRoot: {fileID: 0}
-  mTargetName: generated_1
+  mTargetName: jungle3
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 42185113}
   mMeshFilter: {fileID: 0}
@@ -1143,13 +1143,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: generated_1
+  mTrackableName: jungle2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
-  mAspectRatio: 0.75
+  mAspectRatio: 0.5625
   mImageTargetType: 0
   mWidth: 5
-  mHeight: 3.75
+  mHeight: 2.8125
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -1184,7 +1184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 358743327}
   mHiddenRoot: {fileID: 0}
-  mTargetName: generated_1
+  mTargetName: jungle2
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 358743327}
   mMeshFilter: {fileID: 0}
@@ -2303,7 +2303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &859049727
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2538,13 +2538,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: generated_1
+  mTrackableName: peppefam
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
-  mAspectRatio: 0.75
+  mAspectRatio: 0.59973747
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 3.75
+  mWidth: 6
+  mHeight: 3.598425
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2579,7 +2579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 940139460}
   mHiddenRoot: {fileID: 0}
-  mTargetName: generated_1
+  mTargetName: peppefam
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 940139460}
   mMeshFilter: {fileID: 0}
@@ -3041,7 +3041,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 3, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1159817107
 MonoBehaviour:
@@ -3056,7 +3056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 0}
-  progress: {fileID: 0}
+  progress: {fileID: 425870751}
 --- !u!54 &1159817108
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3704,13 +3704,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: generated_1
+  mTrackableName: jungle1
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
-  mAspectRatio: 0.75
+  mAspectRatio: 0.625
   mImageTargetType: 0
   mWidth: 5
-  mHeight: 3.75
+  mHeight: 3.125
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -3745,7 +3745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1351903370}
   mHiddenRoot: {fileID: 0}
-  mTargetName: generated_1
+  mTargetName: jungle1
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 1351903370}
   mMeshFilter: {fileID: 0}
@@ -4713,13 +4713,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: generated_1
+  mTrackableName: jungle4
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
-  mAspectRatio: 0.75
+  mAspectRatio: 1
   mImageTargetType: 0
   mWidth: 5
-  mHeight: 3.75
+  mHeight: 5
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -4754,7 +4754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1867576483}
   mHiddenRoot: {fileID: 0}
-  mTargetName: generated_1
+  mTargetName: jungle4
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 1867576483}
   mMeshFilter: {fileID: 0}
