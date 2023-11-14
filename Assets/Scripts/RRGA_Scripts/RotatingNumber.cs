@@ -17,6 +17,6 @@ public class RotatingNumber : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(transform.position, Vector3.up, rotationSpeed * Time.deltaTime);
+        transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime, Space.Self);
     }
 }

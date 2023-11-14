@@ -30,10 +30,16 @@ public class GameProgress : MonoBehaviour
             int i = Random.Range(0, spawnPoints.Count);
             GameObject obj = Instantiate(spawnList[0], spawnPoints[i].transform);
             GameObject rn = Instantiate(rotatingNumber, spawnPoints[i].transform);
+
             obj.transform.position = new Vector3(0, 5f, 0);
+            
             obj.GetComponent<Treasure>().AssignTreasureIndex(treasureIndexCounter);
+
             rn.GetComponent<RotatingNumber>().number = treasureIndexCounter + 1;
             rn.transform.parent = obj.transform;
+
+            obj.transform.Rotate(new Vector3(-90, 180, 0), Space.Self);
+
             spawnPoints.RemoveAt(i);
 
             treasureIndexCounter++;
