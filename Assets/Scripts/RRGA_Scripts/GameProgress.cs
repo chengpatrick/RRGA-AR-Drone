@@ -9,6 +9,7 @@ public class GameProgress : MonoBehaviour
     [SerializeField] List<GameObject> spawnList;
 
     [SerializeField] List<GameObject> spawnPoints;
+    [SerializeField] GameObject rotatingNumber;
     [SerializeField] UIManager ui;
     
     public int totalCollectables;
@@ -28,8 +29,11 @@ public class GameProgress : MonoBehaviour
         {
             int i = Random.Range(0, spawnPoints.Count);
             GameObject obj = Instantiate(spawnList[0], spawnPoints[i].transform);
+            GameObject rn = Instantiate(rotatingNumber, spawnPoints[i].transform);
             obj.transform.position = new Vector3(0, 5f, 0);
             obj.GetComponent<Treasure>().AssignTreasureIndex(treasureIndexCounter);
+            rn.GetComponent<RotatingNumber>().number = treasureIndexCounter + 1;
+            rn.transform.parent = obj.transform;
             spawnPoints.RemoveAt(i);
 
             treasureIndexCounter++;

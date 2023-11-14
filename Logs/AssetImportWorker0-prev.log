@@ -15,7 +15,7 @@ C:/RRGA/2023_semester_3/rrga/UnityControllerForTello
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62009
+56825
 Successfully changed project path to: C:/RRGA/2023_semester_3/rrga/UnityControllerForTello
 C:/RRGA/2023_semester_3/rrga/UnityControllerForTello
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,13 +49,13 @@ C:/RRGA/2023_semester_3/rrga/UnityControllerForTello
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [6216] Host "[IP] 172.24.16.58 [Port] 0 [Flags] 2 [Guid] 1097509351 [EditorId] 1097509351 [Version] 1048832 [Id] WindowsEditor(7,ETC-PCHENG2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14276] Host "[IP] 172.24.16.58 [Port] 0 [Flags] 2 [Guid] 1040705919 [EditorId] 1040705919 [Version] 1048832 [Id] WindowsEditor(7,ETC-PCHENG2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [6216] Host "[IP] 172.24.16.58 [Port] 0 [Flags] 2 [Guid] 1097509351 [EditorId] 1097509351 [Version] 1048832 [Id] WindowsEditor(7,ETC-PCHENG2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14276] Host "[IP] 172.24.16.58 [Port] 0 [Flags] 2 [Guid] 1040705919 [EditorId] 1040705919 [Version] 1048832 [Id] WindowsEditor(7,ETC-PCHENG2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 83.05 ms, found 13 plugins.
-Preloading 2 native plugins for Editor in 11.35 ms.
+Refreshing native plugins compatible for Editor in 78.92 ms, found 13 plugins.
+Preloading 2 native plugins for Editor in 11.97 ms.
 Initialize engine version: 2022.3.9f1 (ea401c316338)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/RRGA/2023_semester_3/rrga/UnityControllerForTello/Assets
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56228
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011229 seconds.
-- Loaded All Assemblies, in  0.361 seconds
+Registered in 0.012390 seconds.
+- Loaded All Assemblies, in  0.417 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 679 ms
+Android Extension - Scanning For ADB Devices 769 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.987 seconds
-Domain Reload Profiling: 1346ms
-	BeginReloadAssembly (122ms)
+- Finished resetting the current domain, in  1.110 seconds
+Domain Reload Profiling: 1526ms
+	BeginReloadAssembly (153ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (61ms)
-	LoadAllAssembliesAndSetupDomain (135ms)
-		LoadAssemblies (122ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (156ms)
+		LoadAssemblies (147ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (132ms)
-			TypeCache.Refresh (130ms)
-				TypeCache.ScanAssembly (116ms)
+		AnalyzeDomain (153ms)
+			TypeCache.Refresh (151ms)
+				TypeCache.ScanAssembly (138ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (988ms)
+	FinalizeReload (1111ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (937ms)
+		SetupLoadedEditorAssemblies (1054ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (801ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (906ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (85ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (94ms)
 			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -119,8 +119,8 @@ Domain Reload Profiling: 1346ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.708 seconds
-Refreshing native plugins compatible for Editor in 19.30 ms, found 13 plugins.
+- Loaded All Assemblies, in  0.803 seconds
+Refreshing native plugins compatible for Editor in 66.30 ms, found 13 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -128,47 +128,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.661 seconds
-Domain Reload Profiling: 1362ms
-	BeginReloadAssembly (157ms)
+- Finished resetting the current domain, in  0.757 seconds
+Domain Reload Profiling: 1556ms
+	BeginReloadAssembly (165ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (477ms)
-		LoadAssemblies (423ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (557ms)
+		LoadAssemblies (446ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (151ms)
-			TypeCache.Refresh (128ms)
-				TypeCache.ScanAssembly (103ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (661ms)
+		AnalyzeDomain (208ms)
+			TypeCache.Refresh (183ms)
+				TypeCache.ScanAssembly (158ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (758ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (502ms)
+		SetupLoadedEditorAssemblies (536ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (64ms)
+			BeforeProcessingInitializeOnLoad (97ms)
 			ProcessInitializeOnLoadAttributes (261ms)
-			ProcessInitializeOnLoadMethodAttributes (140ms)
+			ProcessInitializeOnLoadMethodAttributes (141ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 23.90 ms, found 13 plugins.
-Preloading 2 native plugins for Editor in 0.12 ms.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 18.42 ms, found 13 plugins.
+Preloading 2 native plugins for Editor in 0.11 ms.
 Unloading 2649 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 90 unused Assets / (82.5 KB). Loaded Objects now: 3399.
-Memory consumption went from 125.8 MB to 125.7 MB.
-Total: 6.164400 ms (FindLiveObjects: 0.221100 ms CreateObjectMapping: 0.084000 ms MarkObjects: 5.537600 ms  DeleteObjects: 0.320200 ms)
+Memory consumption went from 125.8 MB to 125.8 MB.
+Total: 7.714800 ms (FindLiveObjects: 0.337700 ms CreateObjectMapping: 0.201600 ms MarkObjects: 6.859600 ms  DeleteObjects: 0.313900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -184,12 +184,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 24.83 ms, found 13 plugins.
-Preloading 2 native plugins for Editor in 0.10 ms.
+Refreshing native plugins compatible for Editor in 16.64 ms, found 13 plugins.
+Preloading 2 native plugins for Editor in 0.09 ms.
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 1 unused Assets / (3.0 KB). Loaded Objects now: 3399.
 Memory consumption went from 73.0 MB to 73.0 MB.
-Total: 8.244400 ms (FindLiveObjects: 0.340400 ms CreateObjectMapping: 0.204100 ms MarkObjects: 7.670400 ms  DeleteObjects: 0.028200 ms)
+Total: 7.563900 ms (FindLiveObjects: 0.282800 ms CreateObjectMapping: 0.189100 ms MarkObjects: 7.062500 ms  DeleteObjects: 0.028200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -207,50 +207,58 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1128281.113958 seconds.
-  path: Assets/RRGA/blockout_RRGA.prefab
-  artifactKey: Guid(590537ee4e80d164ba4fc1d3fff31b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RRGA/blockout_RRGA.prefab using Guid(590537ee4e80d164ba4fc1d3fff31b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b638680250746f5f7435a22f4534dd91') in 0.083427 seconds
+  Time since last request: 1153798.284147 seconds.
+  path: Assets/RRGA/Prefabs/ProjectileExample.prefab
+  artifactKey: Guid(d2a31ccd13c2c6245b11240114052e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RRGA/Prefabs/ProjectileExample.prefab using Guid(d2a31ccd13c2c6245b11240114052e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cddf4fd9ab29269c55f2c4726a631e0') in 0.085607 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 264
+Number of asset objects unloaded after import = 8
 ========================================================================
 Received Import Request.
-  Time since last request: 7.342861 seconds.
-  path: Assets/Editor/Vuforia/ImageTargetTextures/TestRRGA
-  artifactKey: Guid(8ec6533e631571143ad44ade4f400bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/Vuforia/ImageTargetTextures/TestRRGA using Guid(8ec6533e631571143ad44ade4f400bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db07505cceb4b1ed62f3d4e1732b67c') in 0.000592 seconds
+  Time since last request: 4.195343 seconds.
+  path: Assets/RRGA/Prefabs/objective
+  artifactKey: Guid(4251426895d1c374aac07b06a9f2e18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RRGA/Prefabs/objective using Guid(4251426895d1c374aac07b06a9f2e18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f31ceb476997b4a34db26ff2687b00d') in 0.000485 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.062848 seconds.
-  path: Assets/Editor/Vuforia/ImageTargetTextures/TestRRGA/generated_1_scaled.jpg
-  artifactKey: Guid(a43395fa3c3d47d0b560ac039264933b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/Vuforia/ImageTargetTextures/TestRRGA/generated_1_scaled.jpg using Guid(a43395fa3c3d47d0b560ac039264933b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6341ebc5a355593f38c9f817142c54b0') in 0.028516 seconds
+  Time since last request: 0.080760 seconds.
+  path: Assets/RRGA/Prefabs/objective/objective.fbx
+  artifactKey: Guid(13c6081d73f7b054c9e3e7f3034e09d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RRGA/Prefabs/objective/objective.fbx using Guid(13c6081d73f7b054c9e3e7f3034e09d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7a9b3c219ad99ad7631bc2e9cb8c0b') in 0.026581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/RRGA/Prefabs/objective/objective_lambert1_Emissive.tga
+  artifactKey: Guid(d5db363f08f790845aeb12fd5c97ef10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RRGA/Prefabs/objective/objective_lambert1_Emissive.tga using Guid(d5db363f08f790845aeb12fd5c97ef10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac610cf72125119134c7bf532d83156a') in 0.027906 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Editor/Vuforia/ImageTargetTextures/TestRRGA/jungle2_scaled.jpg
-  artifactKey: Guid(7ab29646e1374e6e85f56f11c5244334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/Vuforia/ImageTargetTextures/TestRRGA/jungle2_scaled.jpg using Guid(7ab29646e1374e6e85f56f11c5244334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8c9faa7a32bda897a4688a6b48cb378') in 0.017316 seconds
+  Time since last request: 0.000024 seconds.
+  path: Assets/RRGA/Prefabs/objective/objective_lambert1_Roughness.tga
+  artifactKey: Guid(ca91bea044c00db4bb49c67bb4767fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RRGA/Prefabs/objective/objective_lambert1_Roughness.tga using Guid(ca91bea044c00db4bb49c67bb4767fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c012d5fddec2b60bc70f84d9cf5a24a') in 0.014891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.765722 seconds.
+  path: Assets/RRGA/Prefabs/palm/Leaves_Roughness.tga
+  artifactKey: Guid(cee602e6a2b05864a8ea1251aa0c4769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RRGA/Prefabs/palm/Leaves_Roughness.tga using Guid(cee602e6a2b05864a8ea1251aa0c4769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40cbed0452e1719d5320f082807abd7b') in 0.015728 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/Editor/Vuforia/ImageTargetTextures/TestRRGA/rrgalogo_scaled.jpg
-  artifactKey: Guid(fee24feb309e470d88d5807510d748b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/Vuforia/ImageTargetTextures/TestRRGA/rrgalogo_scaled.jpg using Guid(fee24feb309e470d88d5807510d748b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8563d85b2a6a712780f784b6315dde06') in 0.014246 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Editor/Vuforia/ImageTargetTextures/TestRRGA/peppefam_scaled.jpg
-  artifactKey: Guid(d55bf0b986b54002a95693d60db6d572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/Vuforia/ImageTargetTextures/TestRRGA/peppefam_scaled.jpg using Guid(d55bf0b986b54002a95693d60db6d572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e46b02a8bb6844e50d0024af7d434f0') in 0.015114 seconds
+  path: Assets/RRGA/Prefabs/palm/palm_Roughness.tga
+  artifactKey: Guid(429a744e92a44d147a492226be5e1938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RRGA/Prefabs/palm/palm_Roughness.tga using Guid(429a744e92a44d147a492226be5e1938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e03965bff0d1a30fa84e9832fc5641') in 0.014160 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

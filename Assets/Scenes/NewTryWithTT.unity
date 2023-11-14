@@ -1386,6 +1386,8 @@ MonoBehaviour:
   - {fileID: 358743324}
   - {fileID: 42185110}
   - {fileID: 1867576480}
+  rotatingNumber: {fileID: 5617635683679442022, guid: e6562a202ce0c54428015f1aa0e154ff,
+    type: 3}
   ui: {fileID: 1233585181}
   totalCollectables: 3
 --- !u!4 &425870752
