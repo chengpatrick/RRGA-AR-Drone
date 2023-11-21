@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="pexels-irina-iriser-1408221" size="10.000000 6.666667" />
     <ImageTarget name="jungle4" size="5.000000 5.000000" />
     <ImageTarget name="jungle3" size="5.000000 2.812500" />
     <ImageTarget name="jungle2" size="5.000000 2.812500" />
     <ImageTarget name="jungle1" size="5.000000 3.125000" />
     <ImageTarget name="generated_1" size="5.000000 3.750000" />
-    <ImageTarget name="peppefam" size="6.000000 3.598425" />
   </Tracking>
 </QCARConfig>

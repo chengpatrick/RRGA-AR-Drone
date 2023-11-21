@@ -2608,13 +2608,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: peppefam
+  mTrackableName: pexels-irina-iriser-1408221
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
-  mAspectRatio: 0.59973747
+  mAspectRatio: 0.6666667
   mImageTargetType: 0
-  mWidth: 6
-  mHeight: 3.598425
+  mWidth: 10
+  mHeight: 6.666667
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2649,7 +2649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 940139460}
   mHiddenRoot: {fileID: 0}
-  mTargetName: peppefam
+  mTargetName: pexels-irina-iriser-1408221
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 940139460}
   mMeshFilter: {fileID: 0}
