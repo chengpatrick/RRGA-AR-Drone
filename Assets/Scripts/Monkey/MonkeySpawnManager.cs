@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MonkeySpawnManager : SingletonMonoBehaviour<MonkeySpawnManager>
 {
+    public bool testInDroneSimulator;
+
     [SerializeField]
     Transform playerTransform;
 

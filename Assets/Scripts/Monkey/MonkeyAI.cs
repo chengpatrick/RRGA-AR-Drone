@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public enum MonkeyState
 {
-    Idle, Move, Disappear
+    Idle, Jump, Fly, Disappear
 }
 
 public class MonkeyAI : MonoBehaviour
@@ -23,6 +24,8 @@ public class MonkeyAI : MonoBehaviour
 
     bool getPlayerPosition;
 
+    Animator AC_Monki;
+
     private void Start()
     {
 
@@ -30,13 +33,17 @@ public class MonkeyAI : MonoBehaviour
 
     private void OnEnable()
     {
+        AC_Monki = GetComponent<Animator>();
+
         if (!getPlayerPosition)
         {
             monkeyState = MonkeyState.Idle;
 
             // get player position
-            //playerPosition = MonkeySpawnManager.Instance.PlayerTransform.position;
-            playerPosition = Camera.main.transform.position;
+            if (MonkeySpawnManager.Instance.testInDroneSimulator)
+                playerPosition = MonkeySpawnManager.Instance.PlayerTransform.position;
+            else
+                playerPosition = Camera.main.transform.position;
 
             getPlayerPosition = true;
         }
@@ -51,10 +58,16 @@ public class MonkeyAI : MonoBehaviour
                 IdleTransition();
                 break;
 
-            case MonkeyState.Move:
-                MoveAction();
-                MoveTransition();
+            case MonkeyState.Jump:
+                JumpAction();
+                JumpTransition();
                 break;
+
+            case MonkeyState.Fly:
+                FlyAction();
+                FlyTransition();
+                break;
+
             case MonkeyState.Disappear:
                 DisappearAction();
                 break;
@@ -65,14 +78,30 @@ public class MonkeyAI : MonoBehaviour
 
     void IdleTransition()
     {
-        
-        monkeyState = MonkeyState.Move;
+        monkeyState = MonkeyState.Jump;
     }
 
-    void MoveAction()
+    private void JumpAction()
+    {
+        AC_Monki.enabled = true;
+        transform.LookAt(playerPosition);
+    }
+
+    private void JumpTransition()
+    {
+        StartCoroutine(JumpCoroutine());
+    }
+
+    IEnumerator JumpCoroutine()
+    {
+        yield return new WaitForSeconds(0.7f); 
+        monkeyState = MonkeyState.Fly;
+    }
+
+    private void FlyAction()
     {
         // Monkey looks at the player
-        transform.LookAt(playerPosition);
+        //transform.LookAt(playerPosition);
         StartCoroutine(JumpToTarget(playerPosition));
 
 /*        // Monkey moves to the player
@@ -80,7 +109,7 @@ public class MonkeyAI : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, playerPosition, step);*/
     }
 
-    void MoveTransition()
+    private void FlyTransition()
     {
         if (Vector3.Distance(transform.position, playerPosition) < 0.001f)
         {

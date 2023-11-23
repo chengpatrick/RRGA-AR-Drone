@@ -2566,6 +2566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f09309677d6c24ab2bc6b3302607ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  treasureProgressTxt: {fileID: 0}
+  winTxt: {fileID: 0}
 --- !u!114 &1159817105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2839,8 +2841,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544ee82cb9c9fb249b1c271106eca9ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testInDroneSimulator: 1
   playerTransform: {fileID: 39486196}
-  monkeyPrefab: {fileID: 2527030043286793112, guid: 427b52bd9ca6e6c4b8714e499ee8df26,
+  monkeyPrefab: {fileID: 7975677901879293502, guid: 84bc2ef5288bf2b4f8ac40d1538e459e,
     type: 3}
   poolSize: 20
   monkeyPool: []
