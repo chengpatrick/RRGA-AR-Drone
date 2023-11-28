@@ -440,6 +440,7 @@ GameObject:
   - component: {fileID: 42185114}
   - component: {fileID: 42185113}
   - component: {fileID: 42185112}
+  - component: {fileID: 42185116}
   - component: {fileID: 42185115}
   m_Layer: 0
   m_Name: ImageTarget (4)
@@ -488,7 +489,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 42185115}
+        m_TargetAssemblyTypeName: ObjectTrackEvents, Assembly-CSharp
+        m_MethodName: EnableChildObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -518,7 +531,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 42185115}
+  mPreview: {fileID: 42185116}
 --- !u!4 &42185114
 Transform:
   m_ObjectHideFlags: 0
@@ -535,6 +548,18 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &42185115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42185110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c778dab02e152646b8efdbb2f58a331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &42185116
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -988,6 +1013,7 @@ GameObject:
   - component: {fileID: 335736008}
   - component: {fileID: 335736007}
   - component: {fileID: 335736006}
+  - component: {fileID: 335736010}
   - component: {fileID: 335736009}
   m_Layer: 0
   m_Name: ImageTarget
@@ -1036,7 +1062,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 335736009}
+        m_TargetAssemblyTypeName: ObjectTrackEvents, Assembly-CSharp
+        m_MethodName: EnableChildObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -1066,7 +1104,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 335736009}
+  mPreview: {fileID: 335736010}
 --- !u!4 &335736008
 Transform:
   m_ObjectHideFlags: 0
@@ -1083,6 +1121,18 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &335736009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335736004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c778dab02e152646b8efdbb2f58a331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &335736010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1144,6 +1194,7 @@ GameObject:
   - component: {fileID: 358743328}
   - component: {fileID: 358743327}
   - component: {fileID: 358743326}
+  - component: {fileID: 358743330}
   - component: {fileID: 358743329}
   m_Layer: 0
   m_Name: ImageTarget (3)
@@ -1192,7 +1243,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 358743329}
+        m_TargetAssemblyTypeName: ObjectTrackEvents, Assembly-CSharp
+        m_MethodName: EnableChildObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -1222,7 +1285,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 358743329}
+  mPreview: {fileID: 358743330}
 --- !u!4 &358743328
 Transform:
   m_ObjectHideFlags: 0
@@ -1239,6 +1302,18 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &358743329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358743324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c778dab02e152646b8efdbb2f58a331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &358743330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2541,6 +2616,7 @@ GameObject:
   - component: {fileID: 940139461}
   - component: {fileID: 940139460}
   - component: {fileID: 940139459}
+  - component: {fileID: 940139463}
   - component: {fileID: 940139462}
   m_Layer: 0
   m_Name: ImageTarget (1)
@@ -2589,7 +2665,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 940139462}
+        m_TargetAssemblyTypeName: ObjectTrackEvents, Assembly-CSharp
+        m_MethodName: EnableChildObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -2619,7 +2707,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 940139462}
+  mPreview: {fileID: 940139463}
 --- !u!4 &940139461
 Transform:
   m_ObjectHideFlags: 0
@@ -2636,6 +2724,18 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &940139462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940139457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c778dab02e152646b8efdbb2f58a331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &940139463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3707,6 +3807,7 @@ GameObject:
   - component: {fileID: 1351903371}
   - component: {fileID: 1351903370}
   - component: {fileID: 1351903369}
+  - component: {fileID: 1351903373}
   - component: {fileID: 1351903372}
   m_Layer: 0
   m_Name: ImageTarget (2)
@@ -3755,7 +3856,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1351903372}
+        m_TargetAssemblyTypeName: ObjectTrackEvents, Assembly-CSharp
+        m_MethodName: EnableChildObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -3785,7 +3898,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1351903372}
+  mPreview: {fileID: 1351903373}
 --- !u!4 &1351903371
 Transform:
   m_ObjectHideFlags: 0
@@ -3802,6 +3915,18 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1351903372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351903367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c778dab02e152646b8efdbb2f58a331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1351903373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4716,6 +4841,7 @@ GameObject:
   - component: {fileID: 1867576484}
   - component: {fileID: 1867576483}
   - component: {fileID: 1867576482}
+  - component: {fileID: 1867576486}
   - component: {fileID: 1867576485}
   m_Layer: 0
   m_Name: ImageTarget (5)
@@ -4764,7 +4890,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867576485}
+        m_TargetAssemblyTypeName: ObjectTrackEvents, Assembly-CSharp
+        m_MethodName: EnableChildObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -4794,7 +4932,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1867576485}
+  mPreview: {fileID: 1867576486}
 --- !u!4 &1867576484
 Transform:
   m_ObjectHideFlags: 0
@@ -4811,6 +4949,18 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1867576485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867576480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c778dab02e152646b8efdbb2f58a331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1867576486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
