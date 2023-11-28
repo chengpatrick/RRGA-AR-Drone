@@ -2843,7 +2843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testInDroneSimulator: 1
   playerTransform: {fileID: 39486196}
-  monkeyPrefab: {fileID: 7975677901879293502, guid: 84bc2ef5288bf2b4f8ac40d1538e459e,
+  monkeyPrefab: {fileID: 3422826730972639742, guid: 84bc2ef5288bf2b4f8ac40d1538e459e,
     type: 3}
   poolSize: 20
   monkeyPool: []

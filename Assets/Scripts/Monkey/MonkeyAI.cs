@@ -24,6 +24,7 @@ public class MonkeyAI : MonoBehaviour
 
     bool getPlayerPosition;
 
+    [SerializeField]
     Animator AC_Monki;
 
     private void Start()
@@ -33,8 +34,6 @@ public class MonkeyAI : MonoBehaviour
 
     private void OnEnable()
     {
-        AC_Monki = GetComponent<Animator>();
-
         if (!getPlayerPosition)
         {
             monkeyState = MonkeyState.Idle;
