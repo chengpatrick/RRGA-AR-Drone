@@ -36,7 +36,7 @@ namespace UnityControllerForTello
             {
                 sceneManager.ToggleAutoPilot(true);
             }
-            if (Input.GetKeyDown(KeyCode.T))
+            if (Input.GetKeyDown(KeyCode.T) || Input.GetKeyDown(KeyCode.JoystickButton4))
             {
                 sceneManager.TakeOff();
             }
@@ -44,7 +44,7 @@ namespace UnityControllerForTello
             {
                 sceneManager.PrimeProps();
             }
-            else if (Input.GetKeyDown(KeyCode.L))
+            else if (Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.JoystickButton5))
             {
                 sceneManager.Land();
             }
@@ -55,7 +55,7 @@ namespace UnityControllerForTello
         /// </summary>
         /// <returns></returns>
         public Quaternion CheckFlightInputs()
-        {                 
+        {
             float lx = 0f;
             float ly = 0f;
             float rx = 0f;
@@ -70,7 +70,15 @@ namespace UnityControllerForTello
                     ry = Input.GetAxis("Keyboard Pitch");
                     break;
                 case InputType.ThrustmasterThrottle:
-                    ly = Input.GetAxis("Thrustmaster Throttle Elv");
+                    // ly = Input.GetAxis("Thrustmaster Throttle Elv");
+                    if(Input.GetKey(KeyCode.JoystickButton2))
+                    {
+                        ly = 1;
+                    }
+                    else if(Input.GetKey(KeyCode.JoystickButton3))
+                    {
+                        ly = -1;
+                    }
                     rx = Input.GetAxis("Thrustmaster Throttle Roll");
                     ry = -Input.GetAxis("Thrustmaster Throttle Pitch");
                     lx = Input.GetAxis("Thrustmaster Throttle Yaw");
@@ -115,7 +123,7 @@ namespace UnityControllerForTello
             rawRoll = rx;
             rawPitch = ry;
             // return new Quaternion(lx, ly, rx, ry);
-            return new Quaternion(rawYaw, rawElv, rawRoll, rawPitch);        
+            return new Quaternion(rawYaw, rawElv, rawRoll, rawPitch);
         }
     }
 }

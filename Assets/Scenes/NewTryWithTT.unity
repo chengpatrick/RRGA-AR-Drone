@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4787c3498c8dfd4ba455948282b8bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputType: 1
+  inputType: 3
   rawYaw: 0
   rawElv: 0
   rawRoll: 0
@@ -440,15 +440,15 @@ GameObject:
   - component: {fileID: 42185114}
   - component: {fileID: 42185113}
   - component: {fileID: 42185112}
-  - component: {fileID: 42185116}
   - component: {fileID: 42185115}
+  - component: {fileID: 42185116}
   m_Layer: 0
   m_Name: ImageTarget (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &42185112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1013,15 +1013,15 @@ GameObject:
   - component: {fileID: 335736008}
   - component: {fileID: 335736007}
   - component: {fileID: 335736006}
-  - component: {fileID: 335736010}
   - component: {fileID: 335736009}
+  - component: {fileID: 335736010}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &335736006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,15 +1194,15 @@ GameObject:
   - component: {fileID: 358743328}
   - component: {fileID: 358743327}
   - component: {fileID: 358743326}
-  - component: {fileID: 358743330}
   - component: {fileID: 358743329}
+  - component: {fileID: 358743330}
   m_Layer: 0
   m_Name: ImageTarget (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &358743326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2326,6 +2326,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766538399}
   m_CullTransparentMesh: 0
+--- !u!1 &774684469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 774684470}
+  m_Layer: 5
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &774684470
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774684469}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1936967149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &785502797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,15 +2651,15 @@ GameObject:
   - component: {fileID: 940139461}
   - component: {fileID: 940139460}
   - component: {fileID: 940139459}
-  - component: {fileID: 940139463}
   - component: {fileID: 940139462}
+  - component: {fileID: 940139463}
   m_Layer: 0
   m_Name: ImageTarget (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &940139459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3272,6 +3307,11 @@ MonoBehaviour:
   LFirePoint: {fileID: 1936609077}
   RFirePoint: {fileID: 128741767}
   target: {fileID: 1475484835}
+  crosshair: {fileID: 288508051}
+  crossHairXRange: {x: -100, y: 100}
+  crossHairYRange: {x: -100, y: 100}
+  crossHairSpeed: 2
+  crossHairTotargetMapping: 0.016
   projectileSpeed: 5000
 --- !u!120 &1159817110
 LineRenderer:
@@ -3807,15 +3847,15 @@ GameObject:
   - component: {fileID: 1351903371}
   - component: {fileID: 1351903370}
   - component: {fileID: 1351903369}
-  - component: {fileID: 1351903373}
   - component: {fileID: 1351903372}
+  - component: {fileID: 1351903373}
   m_Layer: 0
   m_Name: ImageTarget (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1351903369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4094,6 +4134,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 111827013}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1444169704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444169705}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1444169705
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444169704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1936967149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1447179865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4841,15 +4916,15 @@ GameObject:
   - component: {fileID: 1867576484}
   - component: {fileID: 1867576483}
   - component: {fileID: 1867576482}
-  - component: {fileID: 1867576486}
   - component: {fileID: 1867576485}
+  - component: {fileID: 1867576486}
   m_Layer: 0
   m_Name: ImageTarget (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1867576482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5135,7 +5210,7 @@ GameObject:
   - component: {fileID: 1936967151}
   - component: {fileID: 1936967150}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: ShootingCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5156,6 +5231,8 @@ RectTransform:
   - {fileID: 288508051}
   - {fileID: 1839133039}
   - {fileID: 859049727}
+  - {fileID: 1444169705}
+  - {fileID: 774684470}
   m_Father: {fileID: 1159817103}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

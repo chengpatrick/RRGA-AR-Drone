@@ -35,8 +35,10 @@ Input Description
         -1: Slow
         0: Center
         1: Fast
-    Button 4: Up
-    Button 5: Down
+    Button 2: Up
+    Button 3: Down
+    Button 4: Takeoff
+    Button 5: Land
 
 
 */
