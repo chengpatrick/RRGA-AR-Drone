@@ -645,3 +645,4 @@ InputManager:
     type: 2
     axis: 18
     joyNum: 1
+  m_UsePhysicalKeys: 1
