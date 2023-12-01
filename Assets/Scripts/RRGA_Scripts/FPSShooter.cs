@@ -59,7 +59,7 @@ public class FPSShooter : MonoBehaviour
             Vector3 targetPos = new Vector3(crosshair.localPosition.x * crossHairTotargetMapping, crosshair.localPosition.y * crossHairTotargetMapping, target.localPosition.z);
             target.localPosition = targetPos;
         }
-        Debug.Log("Shooter: Crosshair: " + crosshair.localPosition);
+        //Debug.Log("Shooter: Crosshair: " + crosshair.localPosition);
 
     }
 
@@ -82,17 +82,23 @@ public class FPSShooter : MonoBehaviour
         }
 
 
+        /*
         Vector3 wordPos = cam.ScreenToWorldPoint(crosshair.position);
-        Ray ray = new Ray(wordPos, Vector3.forward);
+        Ray ray = new Ray(wordPos, Vector3.up);
+        */
+        Ray ray = Camera.main.ScreenPointToRay(crosshair.position);
+        Debug.DrawRay(cam.transform.position, ray.direction*2000f, new Color(1, 1, 1), 10f);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit,5000f))
         {
+            Debug.Log("Hit something");
             mLineRenderer.SetPosition(1, target.position);
             if (hit.collider)
             {
                 if (hit.collider.gameObject.tag == "Monster")
                 {
+                    Debug.Log("Shooter: Hit");
                     SoundManager.Instance.PlaySFXClip("SFX_LaserHit");
                     Destroy(hit.transform.gameObject, .3f);
                 }
