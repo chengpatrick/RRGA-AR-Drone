@@ -3436,7 +3436,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1159817103}
-  - component: {fileID: 1159817104}
   - component: {fileID: 1159817102}
   - component: {fileID: 1159817101}
   - component: {fileID: 1159817100}
@@ -3544,20 +3543,6 @@ Transform:
   - {fileID: 1475484835}
   m_Father: {fileID: 13445132}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1159817104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159817099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17f09309677d6c24ab2bc6b3302607ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treasureProgressTxt: {fileID: 1534882709}
-  winTxt: {fileID: 859049726}
 --- !u!114 &1159817105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3657,6 +3642,7 @@ MonoBehaviour:
   crossHairYRange: {x: -120, y: 120}
   crossHairSpeed: 2
   crossHairTotargetMapping: 0.016
+  ui: {fileID: 1233585181}
   projectileSpeed: 5000
 --- !u!120 &1159817110
 LineRenderer:
@@ -4115,6 +4101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treasureProgressTxt: {fileID: 1534882709}
   winTxt: {fileID: 0}
+  timerTxt: {fileID: 467354228}
+  ammoMask: {fileID: 1340532641}
 --- !u!4 &1233585182
 Transform:
   m_ObjectHideFlags: 0
@@ -6284,6 +6272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2104997830}
+  - component: {fileID: 2104997831}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -6312,6 +6301,19 @@ RectTransform:
   m_AnchoredPosition: {x: -847.5, y: -396.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2104997831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104997829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337678b7393c76c4795f411b09dc8c7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1233585181}
 --- !u!1 &2108173173
 GameObject:
   m_ObjectHideFlags: 0

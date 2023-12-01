@@ -14,16 +14,22 @@ public class FPSShooter : MonoBehaviour
     [SerializeField] Vector2 crossHairYRange = new Vector2(-100f, 100f);
     [SerializeField] float crossHairSpeed = 1f;
     [SerializeField] float crossHairTotargetMapping = 1.6f / 100f;
+    [SerializeField] UIManager ui;
+    
 
     private bool left;
     public float projectileSpeed = 30f;
+    public float ammoReloadSpeed = 20f;
 
     // Design Related
     float mFireRange = 500f;
 
-
     // Line Renderer
     LineRenderer mLineRenderer;
+
+    // ammo amount
+    // 0 is full, 300 is empty
+    private float ammo = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -35,10 +41,11 @@ public class FPSShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0))
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0) && ammo <= 270)
         {
             Fire();
             SoundManager.Instance.PlaySFXClipInVary("SFX_LaserShot", 0.9f, 1.2f);
+            ammo += 30f;
         }
         // Debug.Log("Shooter: Crosshair: " + crosshair.localPosition);
 
@@ -61,12 +68,17 @@ public class FPSShooter : MonoBehaviour
         }
         //Debug.Log("Shooter: Crosshair: " + crosshair.localPosition);
 
+        // refill ammo overtime
+        if(ammo > 0)
+            ammo -= Time.deltaTime * ammoReloadSpeed;
+        if (ammo < 0) ammo = 0;
+
+        ui.UpdateAmmoBar(ammo);
     }
 
     private void FixedUpdate()
     {
     }
-
 
     void Fire()
     {
@@ -87,12 +99,12 @@ public class FPSShooter : MonoBehaviour
         Ray ray = new Ray(wordPos, Vector3.up);
         */
         Ray ray = Camera.main.ScreenPointToRay(crosshair.position);
-        Debug.DrawRay(cam.transform.position, ray.direction*2000f, new Color(1, 1, 1), 10f);
+        // Debug.DrawRay(cam.transform.position, ray.direction*2000f, new Color(1, 1, 1), 10f);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit,5000f))
         {
-            Debug.Log("Hit something");
+            // Debug.Log("Hit something");
             mLineRenderer.SetPosition(1, target.position);
             if (hit.collider)
             {
@@ -105,7 +117,6 @@ public class FPSShooter : MonoBehaviour
             }
 
         }
-
 
         StartCoroutine(LaserFx());
     }
