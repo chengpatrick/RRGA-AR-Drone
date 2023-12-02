@@ -15,6 +15,9 @@ public class FPSShooter : MonoBehaviour
     [SerializeField] float crossHairSpeed = 1f;
     [SerializeField] float crossHairTotargetMapping = 1.6f / 100f;
     [SerializeField] UIManager ui;
+    [SerializeField] GameObject bullet;
+    [SerializeField] GameObject bulletHit;
+    [SerializeField] GameObject screenTint;
     
 
     private bool left;
@@ -41,9 +44,10 @@ public class FPSShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0) && ammo <= 270)
+        if ((Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && ammo <= 270)
         {
             Fire();
+            StartCoroutine(ScreenTint());
             SoundManager.Instance.PlaySFXClipInVary("SFX_LaserShot", 0.9f, 1.2f);
             ammo += 30f;
         }
@@ -80,36 +84,47 @@ public class FPSShooter : MonoBehaviour
     {
     }
 
-    void Fire()
+    GameObject Fire()
     {
+        GameObject bulletOut;
+
         if (left)
         {
             left = false;
-            mLineRenderer.SetPosition(0, RFirePoint.position);
+            bulletOut = Instantiate(bullet, LFirePoint);
+            // mLineRenderer.SetPosition(0, RFirePoint.position);
         }
         else
         {
             left = true;
-            mLineRenderer.SetPosition(0, LFirePoint.position);
+            bulletOut = Instantiate(bullet, RFirePoint);
+            // mLineRenderer.SetPosition(0, LFirePoint.position);
         }
 
+        bulletOut.GetComponent<Bullet>().target = crosshair;
+        bulletOut.transform.SetParent(bulletOut.transform.parent.parent);
 
-        /*
-        Vector3 wordPos = cam.ScreenToWorldPoint(crosshair.position);
-        Ray ray = new Ray(wordPos, Vector3.up);
-        */
-        Ray ray = Camera.main.ScreenPointToRay(crosshair.position);
+        return bulletOut;
+
         // Debug.DrawRay(cam.transform.position, ray.direction*2000f, new Color(1, 1, 1), 10f);
+        // StartCoroutine(LaserFx());
+    }
+
+    public void BulletToCrossHair()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(crosshair.position);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit,5000f))
+        if (Physics.Raycast(ray, out hit, 5000f))
         {
             // Debug.Log("Hit something");
-            mLineRenderer.SetPosition(1, target.position);
+            // mLineRenderer.SetPosition(1, target.position);
             if (hit.collider)
             {
                 if (hit.collider.gameObject.tag == "Monster")
                 {
+                    StartCoroutine(BulletHit());
+
                     Debug.Log("Shooter: Hit");
                     SoundManager.Instance.PlaySFXClip("SFX_LaserHit");
                     Destroy(hit.transform.gameObject, .3f);
@@ -117,8 +132,6 @@ public class FPSShooter : MonoBehaviour
             }
 
         }
-
-        StartCoroutine(LaserFx());
     }
 
     IEnumerator LaserFx()
@@ -126,6 +139,21 @@ public class FPSShooter : MonoBehaviour
         mLineRenderer.enabled = true;
         yield return new WaitForSeconds(0.05f);
         mLineRenderer.enabled = false;
+    }
+
+    IEnumerator ScreenTint()
+    {
+        screenTint.SetActive(true);
+        yield return new WaitForSeconds(.1f);
+        screenTint.SetActive(false);
+    }
+
+    IEnumerator BulletHit()
+    {
+        GameObject bulletHitOut = Instantiate(bulletHit, crosshair);
+        bulletHitOut.transform.SetParent(bulletHitOut.transform.parent.parent);
+        yield return new WaitForSeconds(.3f);
+        Destroy(bulletHitOut );
     }
 
     /*
