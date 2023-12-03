@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="pexels-ian-turnell-709552" size="10.000000 6.666667" />
+    <ImageTarget name="pexels-pixabay-33787" size="10.000000 10.000000" />
+    <ImageTarget name="pexels-pixabay-80453" size="10.000000 6.346667" />
+    <ImageTarget name="pexels-nothing-ahead-3571551" size="10.000000 15.000000" />
+    <ImageTarget name="pexels-sameera-madusanka-1666529" size="10.000000 6.666007" />
     <ImageTarget name="pexels-irina-iriser-1408221" size="10.000000 6.666667" />
     <ImageTarget name="jungle4" size="5.000000 5.000000" />
     <ImageTarget name="jungle3" size="5.000000 2.812500" />
