@@ -21,6 +21,7 @@ public class GameProgress : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.Instance.Play2DSFXInRandom("VO_Command_MissionStart", 2);
         currentCollectables = 0;
         treasureIndexCounter = 0;
 
@@ -57,8 +58,6 @@ public class GameProgress : MonoBehaviour
 
     public void CollectTreasure()
     {
-        SoundManager.Instance.PlaySFXClip("SFX_GetTreasure");
-
         currentCollectables++;
         ui.UpdateTreasureProgressText(currentCollectables);
 

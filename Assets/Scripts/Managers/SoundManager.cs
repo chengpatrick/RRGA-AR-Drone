@@ -52,6 +52,13 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
         }
     }
 
+    public void Play2DSFXInRandom(string name, int totalRandomNum)
+    {
+        int randomResult = Random.Range(1, totalRandomNum + 1);
+
+        PlaySFXClip(name + randomResult);
+    }
+
     public void PlaySFXAtPosition(string name, Vector3 position)
     {
         // If the SFX want to play not in the Dic

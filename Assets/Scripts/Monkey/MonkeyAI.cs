@@ -37,6 +37,7 @@ public class MonkeyAI : MonoBehaviour
         if (!getPlayerPosition)
         {
             monkeyState = MonkeyState.Idle;
+            SoundManager.Instance.Play2DSFXInRandom("VO_Command_Monki", 2);
 
             // get player position
             if (MonkeySpawnManager.Instance.testInDroneSimulator)

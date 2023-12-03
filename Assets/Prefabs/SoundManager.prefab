@@ -598,6 +598,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 238c625c91a88134e9e4b64905261e82, type: 3}
   - {fileID: 8300000, guid: 80981a6e71a803e449d90e1c5838a9f3, type: 3}
   - {fileID: 8300000, guid: 5203d8af6cc60fc4192793ed9102c5a5, type: 3}
+  - {fileID: 8300000, guid: 7492b329aad49e546ba60d0432fe442f, type: 3}
+  - {fileID: 8300000, guid: 1f2cb68384c7a9e4c982fc14ff236f18, type: 3}
+  - {fileID: 8300000, guid: 71f6de512d6460f45a458bccd6ae18cb, type: 3}
+  - {fileID: 8300000, guid: b14658ba02429d64e95d1ea1e23ae9ec, type: 3}
+  - {fileID: 8300000, guid: 99aaf7ed93cd13b47b0f8b9cd9dffac0, type: 3}
+  - {fileID: 8300000, guid: 9c1622876c0a2f447bdd6c4aae158a6a, type: 3}
+  - {fileID: 8300000, guid: a8cf12be5e1abc947960e8b753b117a0, type: 3}
+  - {fileID: 8300000, guid: a45fe0cc9f1089543a2c04f51f79cb06, type: 3}
   BGM_AudioSource: {fileID: 8849692189047129945}
   SFX_AudioSources: {fileID: 2356719922641848131}
   SFXAS_List:
