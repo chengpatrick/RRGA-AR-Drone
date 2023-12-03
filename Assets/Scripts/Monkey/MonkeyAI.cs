@@ -18,19 +18,18 @@ public class MonkeyAI : MonoBehaviour
     float dropSpeed = 2f;
 
     [SerializeField]
+    float waitSecondsForJump = 1f;
+
+    [SerializeField]
     Vector3 playerPosition;
 
     MonkeyState monkeyState;
 
     bool getPlayerPosition;
+    bool coroutineStarted;
 
     [SerializeField]
     Animator AC_Monki;
-
-    private void Start()
-    {
-
-    }
 
     private void OnEnable()
     {
@@ -78,7 +77,19 @@ public class MonkeyAI : MonoBehaviour
 
     void IdleTransition()
     {
+        if (!coroutineStarted)
+        {
+            StartCoroutine(WaitForJump());
+        }
+        
+    }
+
+    IEnumerator WaitForJump()
+    {
+        coroutineStarted = true;
+        yield return new WaitForSeconds(waitSecondsForJump);
         monkeyState = MonkeyState.Jump;
+        coroutineStarted = false;
     }
 
     private void JumpAction()
