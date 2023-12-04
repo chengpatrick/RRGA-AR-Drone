@@ -6,7 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public enum MonkeyState
 {
-    Idle, Jump, Fly, Disappear
+    Idle, Jump, Fly, Disappear, Hit, BeHit
 }
 
 public class MonkeyAI : MonoBehaviour
@@ -73,7 +73,10 @@ public class MonkeyAI : MonoBehaviour
         }
     }
 
-    void IdleAction() { }
+    void IdleAction()
+    {
+        transform.LookAt(playerPosition);
+    }
 
     void IdleTransition()
     {
@@ -95,7 +98,8 @@ public class MonkeyAI : MonoBehaviour
     private void JumpAction()
     {
         AC_Monki.enabled = true;
-        transform.LookAt(playerPosition);
+        AC_Monki.SetTrigger("StartJump");
+        
     }
 
     private void JumpTransition()
@@ -132,6 +136,26 @@ public class MonkeyAI : MonoBehaviour
     {
         getPlayerPosition = false;
         gameObject.SetActive(false);
+    }
+
+    public void MonkiBeHit()
+    {
+        StartCoroutine(Coroutine_BeHit());
+    }
+
+    IEnumerator Coroutine_BeHit()
+    {
+        AC_Monki.SetTrigger("IsHit");
+        yield return new WaitForSeconds(1f);
+        monkeyState = MonkeyState.Disappear;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "MainCamera")
+        {
+            monkeyState = MonkeyState.Disappear;
+        }
     }
 
     private IEnumerator JumpToTarget(Vector3 targetPosition)

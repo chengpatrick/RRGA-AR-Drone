@@ -125,6 +125,7 @@ public class FPSShooter : MonoBehaviour
                 {
                     StartCoroutine(BulletHit());
 
+                    hit.collider.gameObject.GetComponentInChildren<MonkeyAI>().MonkiBeHit();
                     Debug.Log("Shooter: Hit");
                     SoundManager.Instance.PlaySFXClip("SFX_LaserHit");
                     Destroy(hit.transform.gameObject, .3f);
