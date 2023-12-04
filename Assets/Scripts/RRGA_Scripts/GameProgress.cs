@@ -32,7 +32,7 @@ public class GameProgress : MonoBehaviour
             GameObject obj = Instantiate(spawnList[0], spawnPoints[i].transform);
             GameObject rn = Instantiate(rotatingNumber, spawnPoints[i].transform);
 
-            obj.transform.position = new Vector3(0, 5f, 0);
+            obj.transform.position = new Vector3(0, 8f, 0);
             
             obj.GetComponent<Treasure>().AssignTreasureIndex(treasureIndexCounter);
 
@@ -51,6 +51,7 @@ public class GameProgress : MonoBehaviour
         {
             int i = Random.Range(0, spawnPoints.Count);
             GameObject enemy = Instantiate(spawnList[1], spawnPoints[i].transform);
+            enemy.transform.position = new Vector3(0, 5f, 0);
             enemy.transform.Rotate(new Vector3(-90, 180, 0), Space.Self);
             spawnPoints.RemoveAt(i);
         }
@@ -62,7 +63,11 @@ public class GameProgress : MonoBehaviour
         ui.UpdateTreasureProgressText(currentCollectables);
 
         if (currentCollectables == totalCollectables)
+        {
             ui.ShowWinText();
+            SoundManager.Instance.Play2DSFXInRandom("VO_Command_Finish", 2);
+        }
+            
     }
 
     public int TargetTreasure()

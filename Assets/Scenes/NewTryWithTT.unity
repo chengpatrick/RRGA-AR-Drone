@@ -520,13 +520,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: jungle3
+  mTrackableName: pexels-pixabay-80453
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
-  mAspectRatio: 0.5625
+  mAspectRatio: 0.6346667
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.8125
+  mWidth: 10
+  mHeight: 6.346667
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -573,11 +573,139 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 42185113}
   mHiddenRoot: {fileID: 0}
-  mTargetName: jungle3
+  mTargetName: pexels-pixabay-80453
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 42185113}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &91746109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 91746110}
+  - component: {fileID: 91746111}
+  m_Layer: 0
+  m_Name: AS_Ambience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &91746110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91746109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1378962931}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &91746111
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91746109}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 73faba6ba512f544198c9fc5964800c2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.15
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &97872630
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,9 +904,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8849692189047129945, guid: 23211ce5688da82489455bc7b0e42ec5,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849692189047129945, guid: 23211ce5688da82489455bc7b0e42ec5,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849692189047129945, guid: 23211ce5688da82489455bc7b0e42ec5,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f18ffdce8fbdde847a12aed25ee02775, type: 3}
+    - target: {fileID: 8849692189047129945, guid: 23211ce5688da82489455bc7b0e42ec5,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 990168854717447003, guid: 23211ce5688da82489455bc7b0e42ec5,
+        type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 91746110}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23211ce5688da82489455bc7b0e42ec5, type: 3}
 --- !u!1 &111827012
@@ -1262,13 +1414,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: generated_1
+  mTrackableName: pexels-ian-turnell-709552
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
-  mAspectRatio: 0.75
+  mAspectRatio: 0.6666667
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 3.75
+  mWidth: 10
+  mHeight: 6.666667
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -1315,7 +1467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 335736007}
   mHiddenRoot: {fileID: 0}
-  mTargetName: generated_1
+  mTargetName: pexels-ian-turnell-709552
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 335736007}
   mMeshFilter: {fileID: 0}
@@ -1443,13 +1595,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: jungle2
+  mTrackableName: pexels-nothing-ahead-3571551
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
-  mAspectRatio: 0.5625
+  mAspectRatio: 1.5
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.8125
+  mWidth: 10
+  mHeight: 15
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -1496,7 +1648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 358743327}
   mHiddenRoot: {fileID: 0}
-  mTargetName: jungle2
+  mTargetName: pexels-nothing-ahead-3571551
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 358743327}
   mMeshFilter: {fileID: 0}
@@ -3682,7 +3834,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4016,7 +4168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1178979256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4215,7 +4367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   treasureProgressTxt: {fileID: 1534882709}
-  winTxt: {fileID: 0}
+  winTxt: {fileID: 859049726}
   timerTxt: {fileID: 467354228}
   ammoMask: {fileID: 1340532641}
 --- !u!4 &1233585182
@@ -4508,13 +4660,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: jungle1
+  mTrackableName: pexels-sameera-madusanka-1666529
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
-  mAspectRatio: 0.625
+  mAspectRatio: 0.6666007
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 3.125
+  mWidth: 10
+  mHeight: 6.666007
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -4561,11 +4713,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1351903370}
   mHiddenRoot: {fileID: 0}
-  mTargetName: jungle1
+  mTargetName: pexels-sameera-madusanka-1666529
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 1351903370}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!4 &1378962931 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 990168854717447003, guid: 23211ce5688da82489455bc7b0e42ec5,
+    type: 3}
+  m_PrefabInstance: {fileID: 106152680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1382619165
 GameObject:
   m_ObjectHideFlags: 0
@@ -5839,13 +5997,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: jungle4
+  mTrackableName: pexels-pixabay-33787
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TestRRGA.xml
   mAspectRatio: 1
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 5
+  mWidth: 10
+  mHeight: 10
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -5892,7 +6050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1867576483}
   mHiddenRoot: {fileID: 0}
-  mTargetName: jungle4
+  mTargetName: pexels-pixabay-33787
   mDatasetName: Vuforia/TestRRGA.xml
   mCastedBehaviour: {fileID: 1867576483}
   mMeshFilter: {fileID: 0}
