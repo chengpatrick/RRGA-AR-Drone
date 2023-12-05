@@ -39,9 +39,9 @@ public class MonkeyAI : MonoBehaviour
             SoundManager.Instance.Play2DSFXInRandom("VO_Command_Monki", 2);
 
             // get player position
-            if (MonkeySpawnManager.Instance.testInDroneSimulator)
-                playerPosition = MonkeySpawnManager.Instance.PlayerTransform.position;
-            else
+            //if (MonkeySpawnManager.Instance.testInDroneSimulator)
+            //    playerPosition = MonkeySpawnManager.Instance.PlayerTransform.position;
+            //else
                 playerPosition = Camera.main.transform.position;
 
             getPlayerPosition = true;

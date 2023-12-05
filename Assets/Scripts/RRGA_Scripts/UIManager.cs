@@ -40,4 +40,6 @@ public class UIManager : MonoBehaviour {
     {
         ammoMask.padding = new Vector4(ammoMask.padding.x, ammoMask.padding.y, ammoMask.padding.z, i);
     }
+
+
 }

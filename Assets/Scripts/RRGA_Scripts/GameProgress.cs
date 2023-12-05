@@ -32,8 +32,9 @@ public class GameProgress : MonoBehaviour
             GameObject obj = Instantiate(spawnList[0], spawnPoints[i].transform);
             GameObject rn = Instantiate(rotatingNumber, spawnPoints[i].transform);
 
-            obj.transform.position = new Vector3(0, 8f, 0);
-            
+            obj.transform.position = new Vector3(0, 5f, 0);
+            rn.transform.position = new Vector3(0, 5f, 0);
+
             obj.GetComponent<Treasure>().AssignTreasureIndex(treasureIndexCounter);
 
             rn.GetComponent<RotatingNumber>().number = treasureIndexCounter + 1;
@@ -51,7 +52,7 @@ public class GameProgress : MonoBehaviour
         {
             int i = Random.Range(0, spawnPoints.Count);
             GameObject enemy = Instantiate(spawnList[1], spawnPoints[i].transform);
-            enemy.transform.position = new Vector3(0, 5f, 0);
+            enemy.transform.position = new Vector3(0, 3f, 0);
             enemy.transform.Rotate(new Vector3(-90, 180, 0), Space.Self);
             spawnPoints.RemoveAt(i);
         }
