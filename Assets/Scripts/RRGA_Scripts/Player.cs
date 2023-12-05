@@ -23,15 +23,12 @@ public class Player : MonoBehaviour
         }
         else if(other.gameObject.tag == "Monster")
         {
-            // ui.setCrack();
-            SoundManager.Instance.Play2DSFXInRandom("SFX_BeHit", 2);
+            ui.ShowCrack();
         }
 
         if(other.gameObject.tag == "Finish" && hasTreasure)
         {
-            SoundManager.Instance.Play2DSFXInRandom("VO_Command_Finish", 2);
-            Debug.Log("Win State");
-            // ui.setWinText();
+            ui.ShowWinText();
         }
     }
 }

@@ -3896,7 +3896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146150fb546ec6640bd8265fc921d5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 0}
+  ui: {fileID: 1233585181}
   progress: {fileID: 425870751}
 --- !u!54 &1159817108
 Rigidbody:
@@ -4414,6 +4414,7 @@ MonoBehaviour:
   winTxt: {fileID: 859049726}
   timerTxt: {fileID: 467354228}
   ammoMask: {fileID: 1340532641}
+  crack: {fileID: 1527663139}
 --- !u!4 &1233585182
 Transform:
   m_ObjectHideFlags: 0

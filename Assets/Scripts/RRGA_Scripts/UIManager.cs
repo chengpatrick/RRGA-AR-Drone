@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour {
     [SerializeField] GameObject winTxt;
     [SerializeField] TextMeshProUGUI timerTxt;
     [SerializeField] RectMask2D ammoMask;
+    [SerializeField] GameObject crack;
 
     public void setTimerText(int min, int sec)
     {
@@ -39,6 +40,18 @@ public class UIManager : MonoBehaviour {
     public void UpdateAmmoBar(float i)
     {
         ammoMask.padding = new Vector4(ammoMask.padding.x, ammoMask.padding.y, ammoMask.padding.z, i);
+    }
+
+    public void ShowCrack()
+    {
+        StartCoroutine(Crack());
+    }
+
+    IEnumerator Crack()
+    {
+        crack.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        crack.SetActive(false);
     }
 
 
