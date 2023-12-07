@@ -1,0 +1,311 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.9f1 (ad3870b89536) revision 11352176'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 32690 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/kinou/OneDrive/Documents/GitHub/RRGA-AR-Drone
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+8512
+Successfully changed project path to: C:/Users/kinou/OneDrive/Documents/GitHub/RRGA-AR-Drone
+C:/Users/kinou/OneDrive/Documents/GitHub/RRGA-AR-Drone
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 88.98 ms, found 13 plugins.
+Preloading 2 native plugins for Editor in 3.47 ms.
+Initialize engine version: 2021.3.9f1 (ad3870b89536)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/kinou/OneDrive/Documents/GitHub/RRGA-AR-Drone/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12100 MB
+    Driver:   31.0.15.4617
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013272 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 52.85 ms, found 13 plugins.
+Preloading 2 native plugins for Editor in 0.17 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.548 seconds
+Domain Reload Profiling:
+	ReloadAssembly (549ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (348ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (73ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (204ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (53ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.022189 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 13 plugins.
+Preloading 2 native plugins for Editor in 0.20 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.962 seconds
+Domain Reload Profiling:
+	ReloadAssembly (963ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (750ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (156ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (414ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (210ms)
+				ProcessInitializeOnLoadMethodAttributes (96ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 13 plugins.
+Preloading 2 native plugins for Editor in 0.37 ms.
+Unloading 2487 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 84 unused Assets / (67.2 KB). Loaded Objects now: 3220.
+Memory consumption went from 103.3 MB to 103.2 MB.
+Total: 5.902000 ms (FindLiveObjects: 0.198100 ms CreateObjectMapping: 0.110400 ms MarkObjects: 5.496400 ms  DeleteObjects: 0.096500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 833290.196332 seconds.
+  path: Assets/Cope! Free Skybox Pack/materials
+  artifactKey: Guid(96512971e7c4a4c57a962e02cbd7ec51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cope! Free Skybox Pack/materials using Guid(96512971e7c4a4c57a962e02cbd7ec51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e86d0c17a2efd5b269d88e2570dc790') in 0.007843 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023854 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 13 plugins.
+Preloading 2 native plugins for Editor in 0.24 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.097 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1098ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (838ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (191ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (445ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (100ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 17.19 ms, found 13 plugins.
+Preloading 2 native plugins for Editor in 0.18 ms.
+Unloading 2440 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 73 unused Assets / (36.1 KB). Loaded Objects now: 3225.
+Memory consumption went from 99.1 MB to 99.0 MB.
+Total: 5.899800 ms (FindLiveObjects: 0.215200 ms CreateObjectMapping: 0.057400 ms MarkObjects: 5.592400 ms  DeleteObjects: 0.033800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 170.856943 seconds.
+  path: Assets/com/heparo
+  artifactKey: Guid(47304705517ea134491ebef2305522b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo using Guid(47304705517ea134491ebef2305522b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e49d89aa23581a2a0f5228bbb89267') in 0.013242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.799479 seconds.
+  path: Assets/com/heparo/terrain
+  artifactKey: Guid(12eb049238d2d7a48a50d00714115904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain using Guid(12eb049238d2d7a48a50d00714115904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '564ced6579452bcfc04580c1dc4c7b17') in 0.006266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.311182 seconds.
+  path: Assets/com/heparo/terrain/toolkit
+  artifactKey: Guid(d1f29f5a1f8b5c94899f99c1df234d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit using Guid(d1f29f5a1f8b5c94899f99c1df234d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f534fcad817d0240c9f34c1dd25ba2b7') in 0.004529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.591506 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures
+  artifactKey: Guid(8136fd3570f16c645aa22565d8abbf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures using Guid(8136fd3570f16c645aa22565d8abbf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e10b7f5517d927bcf13cce78c66c69') in 0.004435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.058454 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Cliff (Grassy).jpg
+  artifactKey: Guid(2feaa88369b0d004cbc6e5944204420a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Cliff (Grassy).jpg using Guid(2feaa88369b0d004cbc6e5944204420a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df18b4c051d9637d9b72a21645c5422d') in 0.190419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Grass (Hill).jpg
+  artifactKey: Guid(9924245327ef043478a9a9ee2219f73a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Grass (Hill).jpg using Guid(9924245327ef043478a9a9ee2219f73a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb7b7203b511161c4ab4c9a8e03c3d3') in 0.029460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Pebbles.jpg
+  artifactKey: Guid(d451fba7efe3e9e4fa26d8a87de3e93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Pebbles.jpg using Guid(d451fba7efe3e9e4fa26d8a87de3e93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e69605ddbb44662da0d18b778d5399d') in 0.021433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Sand (Beach Wet2).jpg
+  artifactKey: Guid(704284e54fdc67341a790ddb79b4c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Sand (Beach Wet2).jpg using Guid(704284e54fdc67341a790ddb79b4c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8d8859ab555c502fe8200bba7af83b') in 0.028500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Rock (Moss).jpg
+  artifactKey: Guid(0c3a51ef523441e44afd8e304e704eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Rock (Moss).jpg using Guid(0c3a51ef523441e44afd8e304e704eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79b2e0668d7a2c62bfead89c28f77e7') in 0.019648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Rocky Dirt.jpg
+  artifactKey: Guid(dce4092215b497a4faad7c7170c4c3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Rocky Dirt.jpg using Guid(dce4092215b497a4faad7c7170c4c3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a237452ed78cd753f06f4257f6516ae') in 0.022513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Cliff (Sandstone).jpg
+  artifactKey: Guid(567e8871595c53e4f98db6c010b237f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Cliff (Sandstone).jpg using Guid(567e8871595c53e4f98db6c010b237f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b970b1d405a357d1fa22b527152bc24') in 0.015221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Grass (Lawn).jpg
+  artifactKey: Guid(1ae9f5e22fb93144b8a70c6eeffc2083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Grass (Lawn).jpg using Guid(1ae9f5e22fb93144b8a70c6eeffc2083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58108f4e667de89693da6c555d78a1ff') in 0.016592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Craters (artifacts).png
+  artifactKey: Guid(836f2664f862d974394a02019d0ec90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Craters (artifacts).png using Guid(836f2664f862d974394a02019d0ec90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de66faec6a47cf19b41c0966dcdd75e1') in 0.034141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Sand (with pebbles).jpg
+  artifactKey: Guid(b1e376ee2088e62469d66d01ad87cb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Sand (with pebbles).jpg using Guid(b1e376ee2088e62469d66d01ad87cb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b82eef7f5372c93951d4d99bcb634ba9') in 0.015749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/com/heparo/terrain/toolkit/textures/Dirt (Grass).jpg
+  artifactKey: Guid(1bd9754b976d21f4f96ba170d57b2d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com/heparo/terrain/toolkit/textures/Dirt (Grass).jpg using Guid(1bd9754b976d21f4f96ba170d57b2d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf3f461e5bae7389c85eb62c59e59e4') in 0.018387 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
